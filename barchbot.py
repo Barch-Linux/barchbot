@@ -7,7 +7,6 @@ https://github.com/Barch-Linux/barchbot
 
 
 from discord.ext import commands
-import discord
 import json
 import os
 
