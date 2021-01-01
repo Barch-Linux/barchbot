@@ -1,3 +1,12 @@
+#!/usr/bin/env python3
+"""
+bname.py
+
+Automatically change the first letter of new
+members' nicknames to a B emoji.
+"""
+
+
 import discord
 from discord.ext import commands
 
@@ -10,9 +19,6 @@ class Bname(commands.Cog):
     async def on_member_join(self, member: discord.Member):
         print("editing member")
         await member.edit(nick=f":b:{member.nick[1:]}")
-"""
-barch
-"""
 
 
 def setup(bot):
